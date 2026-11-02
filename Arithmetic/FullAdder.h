@@ -17,7 +17,9 @@ class FullAdder {
             HalfBitAdder halfAdder1(input1, input2);
             HalfBitAdderResult halfAdder1Result = halfAdder1.evaluate();
 
-            HalfBitAdder halfAdder2(new ConstantGate(halfAdder1Result.sum), carryInput);
+            ConstantGate intermediateSum(halfAdder1Result.sum);
+
+            HalfBitAdder halfAdder2(&intermediateSum, carryInput);
             HalfBitAdderResult halfAdder2Result = halfAdder2.evaluate();
 
             bool finalCarry = halfAdder1Result.carry || halfAdder2Result.carry;
