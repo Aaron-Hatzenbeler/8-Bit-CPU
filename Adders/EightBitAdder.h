@@ -2,12 +2,12 @@
 
 #include <cstdint>
 
-#include "ConstantGate.h"
+#include "../Gates/ConstantGate.h"
 
 #include "FullAdder.h"
 
-#include "AndGate.h"
-#include "XORGate.h"
+#include "../Gates/AndGate.h"
+#include "../Gates/XORGate.h"
 
 struct EightBitAdderResult {
     uint8_t sum;

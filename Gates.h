@@ -1,13 +1,13 @@
 #pragma once
-#include "Gate.h"
+#include "Gates/Gate.h"
 
-#include "ConstantGate.h"
+#include "Gates/ConstantGate.h"
 
-#include "NotGate.h"
-#include "OrGate.h"
-#include "AndGate.h"
-#include "XORGate.h"
+#include "Gates/NotGate.h"
+#include "Gates/OrGate.h"
+#include "Gates/AndGate.h"
+#include "Gates/XORGate.h"
 
-#include "HalfBitAdder.h"
-#include "FullAdder.h"
-#include "EightBitAdder.h"
+#include "Adders/HalfBitAdder.h"
+#include "Adders/FullAdder.h"
+#include "Adders/EightBitAdder.h"

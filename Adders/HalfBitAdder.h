@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Gate.h"
-#include "AndGate.h"
-#include "XORGate.h"
+#include "../Gates/Gate.h"
+#include "../Gates/AndGate.h"
+#include "../Gates/XORGate.h"
 
 struct HalfBitAdderResult {
     bool sum;

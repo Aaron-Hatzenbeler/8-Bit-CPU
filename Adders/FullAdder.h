@@ -1,7 +1,7 @@
 #pragma once
 
-#include "AndGate.h"
-#include "XORGate.h"
+#include "../Gates/AndGate.h"
+#include "../Gates/XORGate.h"
 #include "HalfBitAdder.h"
 
 struct FullAdderResult {
