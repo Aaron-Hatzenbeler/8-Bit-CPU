@@ -3,7 +3,7 @@
 
 int main() {
 
-    runAllAdderTests();
+    runAllTests();
 
     return 0;
 }
