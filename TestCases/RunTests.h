@@ -2,6 +2,7 @@
 
 #include "TestAdders.h"
 #include "TestMutiplexers.h"
+#include "TestALUs.h"
 
 bool runAllAdderTests() {
     bool allPassed = true;
@@ -44,6 +45,23 @@ bool runAllMuxTests() {
     return allPassed;
 }
 
+bool runAllALUTests() {
+    bool allPassed = true;
+
+    if (!ExhaustiveTest_EightBitAND()) {
+        printf("ExhaustiveTest_EightBitAND failed!\n");
+        allPassed = false;
+    }
+
+    if (!ExhaustiveTest_EightBitOR()) {
+        printf("ExhaustiveTest_EightBitOR failed!\n");
+        allPassed = false;
+    }
+
+    printf("All ALU tests completed.\n");
+
+    return allPassed;
+}
 
 
 
@@ -56,6 +74,10 @@ bool runAllTests() {
     }
 
     if (!runAllMuxTests()) {
+        allPassed = false;
+    }
+
+    if (!runAllALUTests()) {
         allPassed = false;
     }
 
