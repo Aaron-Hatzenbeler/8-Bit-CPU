@@ -58,6 +58,11 @@ bool runAllALUTests() {
         allPassed = false;
     }
 
+    if (!ExhaustiveTest_EightBitALU()) {
+        printf("ExhaustiveTest_EightBitALU failed!\n");
+        allPassed = false;
+    }
+
     printf("All ALU tests completed.\n");
 
     return allPassed;

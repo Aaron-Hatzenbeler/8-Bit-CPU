@@ -7,7 +7,7 @@ echo ==========================
 echo Building 8-Bit CPU...
 echo ==========================
 
-g++ -std=c++17 App.cpp -o 8Bit.exe
+g++ -std=c++17 -O2 App.cpp -o 8Bit.exe
 
 if errorlevel 1 (
     echo.
